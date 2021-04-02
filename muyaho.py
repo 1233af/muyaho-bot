@@ -1,13 +1,5 @@
 import discord
-import requests
-
-# url = 'https://doc-08-0g-docs.googleusercontent.com/docs/securesc/hls29morhqatimc1fnrd95d58c12jheb/rb0or1prfhektg84tqgnfjfb4c86aadj/1617198600000/13421179815168591309/13421179815168591309/1qChEstVFFUVvCoW0rqwNEwk020LXEryV?e=download&authuser=0'
-# r = requests.get(url, allow_redirects=True)
-# open('ffmpeg.exe', 'wb').write(r.content)
-
-# url = 'https://doc-00-0g-docs.googleusercontent.com/docs/securesc/hls29morhqatimc1fnrd95d58c12jheb/ccq7glapj8r65eqno7j413l0r7pr73l8/1617198675000/13421179815168591309/13421179815168591309/10C-dJIf0Ktd9MWElS-eFCbCP1YfIjWFj?e=download&authuser=0'
-# r = requests.get(url, allow_redirects=True)
-# open('muyaho.mp3', 'wb').write(r.content)
+import os
 
 client = discord.Client()
 
@@ -37,4 +29,4 @@ async def on_message(message):
 
 
 
-client.run('ODI2NTI0MDc4NTk2MTYxNTk3.YGNuiA.IgsiU3XBpHhODRRcgRHZ521KiEk')
+client.run(os.environ['bot-token'])
